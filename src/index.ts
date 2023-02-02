@@ -61,6 +61,7 @@ class DahuaMotionAlertsPlatform implements IndependentPlatformPlugin {
 				})
 				events.getEventEmitter().on(events.DEBUG_EVENT_NAME, (data) => this.log.debug(data))
 				events.getEventEmitter().on(events.RECONNECTING_EVENT_NAME, (data) => this.log.debug(data))
+				events.getEventEmitter().on(events.INFO_EVENT_NAME, (data) => this.log.info(data))
 			})
 		}
 	}
